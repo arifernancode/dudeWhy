@@ -9,6 +9,9 @@ header, main {
     margin: 3px auto;
     max-width: 600px;
 }
+.red {
+    color: red;
+}
 main {
     text-align: center;
 }
@@ -37,6 +40,8 @@ button:hover {
 #resetButton {
     width: 75px;
     background-color: rgba(224, 83, 35, 0.833);
+    animation: slideUp;
+    animation-duration: 1.5s;
 }
 audio {
     margin: 10px 0 0 0;
@@ -44,7 +49,32 @@ audio {
     min-width: 60px;
     max-width: 200px;
 }
+#chipiImg {
+    animation: slideLeft;
+    animation-duration: 0.5s;
+}
+#primoImg {
+    animation: slideRight;
+    animation-duration: 0.5s;
+}
+#baraAudio {
+    animation: slideRight;
+    animation-duration: 1.5s;
+}
+#chipiAudio {
+    animation: slideLeft;
+    animation-duration: 1.5s;
+}
 audio::-webkit-media-controls-panel {
     background-color: darkolivegreen;
     border-radius: 10px;
+}
+@keyframes slideUp {
+    from{transform: translateY(500px);}
+}
+@keyframes slideRight {
+    from{transform: translateX(-500px);}
+}
+@keyframes slideLeft {
+    from{transform: translateX(500px);}
 }
