@@ -2,6 +2,16 @@ body {
     background-color: beige;
     font-family: "Happy Monkey", "PT Sans", Calibri, Tahoma, sans-serif;
 }
+header h1 {
+    font-size: 3em;
+}
+header, main {
+    margin: 3px auto;
+    max-width: 600px;
+}
+main {
+    text-align: center;
+}
 .bold {
     font-weight: bold;
 }
@@ -17,8 +27,24 @@ button {
     border-radius: 100px;
     border: double black 4px;
     background-color: lightgoldenrodyellow;
+    transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+    background-color: goldenrod; 
+    color: white; 
+    cursor: pointer;
 }
 #resetButton {
     width: 75px;
     background-color: rgba(224, 83, 35, 0.833);
+}
+audio {
+    margin: 10px 0 0 0;
+    border-radius: 30px;
+    min-width: 60px;
+    max-width: 200px;
+}
+audio::-webkit-media-controls-panel {
+    background-color: darkolivegreen;
+    border-radius: 10px;
 }

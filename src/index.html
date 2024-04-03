@@ -16,24 +16,37 @@
     </head>
 
     <body>
-        <h1 class="bold veryLarge center">DO NOT PRESS IT!</h1>
-        <div class="center">
-            <button id="DONTCLICKME" onclick="whyDidYouClick()">DONT CLICK ME</button>
-        </div>
-
-        <h3 class="center"></h3>
-
-        <div class="center" id="primoDivision" hidden>
-
-            <img src="https://i.makeagif.com/media/3-10-2022/qyryXg.gif" height="250px" width="350px">
-            <br>
-            <audio controls id="baraAudio">
-                <source src="sfx/baraBARA.mp3" type="audio/mpeg">
-            </audio>
-            <br>
-            <button id="resetButton" onclick="reset()">Reset</button>
         
-        </div>
+        <header>
+            <h1 class="bold veryLarge center">DO NOT PRESS IT!</h1>
+        </header>
+
+        <main>
+            <div>
+                <button id="DONTCLICKME" onclick="whyDidYouClick()">DONT CLICK ME</button>
+            </div>
+    
+            <h3></h3>
+    
+            <div id="primoDivision" hidden>
+    
+                <img src="https://i.makeagif.com/media/3-10-2022/qyryXg.gif" height="200px" width="200px">
+                <img src="https://media.tenor.com/9mAYF-Tv_AkAAAAM/chibi-chibi-cat-chibi-chibi-chaba-chaba.gif" height="200px" width="200px">
+                <br>
+    
+                <audio controls id="baraAudio">
+                    <source src="sfx/baraBARA.mp3" type="audio/mpeg">
+                </audio>
+    
+                <audio controls id="chipiAudio">
+                    <source src="sfx/chipi.mp3" type="audio/mpeg">
+                </audio>
+    
+                <br>
+                <button id="resetButton" onclick="reset()">Reset</button>
+            
+            </div>
+        </main>
 
         <script src="script.js"></script>
     </body>
