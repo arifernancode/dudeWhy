@@ -1,0 +1,24 @@
+body {
+    background-color: beige;
+    font-family: "Happy Monkey", "PT Sans", Calibri, Tahoma, sans-serif;
+}
+.bold {
+    font-weight: bold;
+}
+.veryLarge {
+    font-size: 50px;
+}
+.center {
+    text-align: center;
+}
+button {
+    width: 140px;
+    height: 40px;
+    border-radius: 100px;
+    border: double black 4px;
+    background-color: lightgoldenrodyellow;
+}
+#resetButton {
+    width: 75px;
+    background-color: rgba(224, 83, 35, 0.833);
+}
