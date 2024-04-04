@@ -16,6 +16,7 @@ function whyDidYouClick() {
         warningText.textContent = "I TOLD YOU NOT TO NOW YOU FACE CONSEQUENCES"
         primoDiv.removeAttribute("hidden");
         baraAudio.volume = 0.3;
+        chipiAudio.volume = 1;
         baraAudio.play();
         chipiAudio.play();
     }
